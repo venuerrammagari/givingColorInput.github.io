@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        button{
+            border: none;
+            background-color: whitesmoke;
+            font-size: 20px;
+            border-radius: 10px;
+            
+        }
+        button:hover{
+            background-color: lightblue;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+
+        }
+
+    </style>
+</head>
+<body >
+    <button onclick="colorinput()">ClickMe!!</button>
+
+    <script>
+        function colorinput(){
+        let color = prompt("Enter Color Name!!");
+
+        document.body.style.background=color;
+    }
+    </script>
+</body>
+</html>
